@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color:#555;
+    font-size: 15px;
+    background: #ecf0f3;
+}
+
+body::-webkit-scrollbar,
+.left_sidebar::-webkit-scrollbar,
+.right_sidebar::-webkit-scrollbar,
+.main_content::-webkit-scrollbar {
+    display: none;
+}
+
+a, li, button {
+    color: #555;
+    outline: none;
+    font-weight: 500px;
+    text-decoration: none;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    padding: 8px 0px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input {
+    width: 450px;
+    padding: 7.5px;
+    outline: none;
+    border: 1px solid #555;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+header form button {
+    color: #555;
+    width: 40px;
+    padding: 7.5px;
+    cursor: pointer;
+    outline: none;
+    background: #ecf0f3;
+    border-left: none;
+    border-top: 1px solid #555;
+    border-right: 1px solid #555;
+    border-bottom: 1px solid #555;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header form button:hover {
+    color: white;
+    background-color: #555;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 0px 20px;
+    display: inline-block;
+}
+
+header nav ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+header nav ul li a:hover {
+    color: black;
+}
+
+header nav button {
+    border: none;
+    cursor: pointer;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+    background-color: none;
+    box-shadow: 2px 2px 5px #cbced1, -5px -5px 10px #ffffff;
+}
+
+header nav button::after {
+    font-weight: 600;
+    content: ' EXIT';
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_sidebar {
+    width: 320px;
+    top: 60px;
+    left: 10px;
+    bottom: 10px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.main_content {
+    top: 60px;
+    left: 340px;
+    right: 340px;
+    bottom: 10px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.view_grade table {
+    margin-bottom: 25px;
+}
+
+.right_sidebar {
+    width: 320px;
+    top: 60px;
+    right: 10px;
+    bottom: 10px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.item {
+    margin: 10px 20px;
+}
+
+.item .title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.item .box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.item form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item form img {
+    width: 190px;
+    height: 190px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
+}
+
+.item form .right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.item form .right input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.item .info {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.item .info i {
+    margin-right: 20px;
+}
+
+.item button {
+    display: block;
+    margin: 15px auto 20px;
+    color: #555;
+    font-weight: 600;
+
+    border: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+    background-color: none;
+    box-shadow: 2px 2px 5px #cbced1, -5px -5px 10px #ffffff;
+}
+
+.item button i {
+    margin-right: 5px;
+}
+
+.profile_image {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 5px auto 25px;
+    box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
+}
+
+
+.item table {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.item table thead tr {
+    color: black;
+    background-color: #bbb;
+}
+
+.item table td, th {
+    padding: 10px;
+}
+
+.item table tbody tr {
+    color: #555;
+    background-color: #ffffff;
+}
+
+.item table tbody tr input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #cbced1;
+}
+
+.item table tbody tr:nth-child(even) {
+    color: #555;
+    background-color: #f3f3f3;
+}
+
+.hide {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1100px) {
+    header form input {
+        width: 225px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left_sidebar, .main_content, .right_sidebar {
+        width: 95%;
+        padding: 0;
+        margin-top: 10px;
+        display: block;
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    header form input {
+        width: 200px;
+    }
+    header nav ul {
+        display: none;
+    }
+    header nav button::after {
+        content: none;
+    }
+    .item form {
+        align-items: center;
+        flex-direction: column;
+    }
+    .item form .right {
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header form input {
+        width: 120px;
+    }
+}
